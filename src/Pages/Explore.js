@@ -1,9 +1,9 @@
 
-export default function Login() {
+export default function Explore() {
     return (
         <div className="App">
             
-             <p>The Login Page</p>
+             <p>The Explore Page</p>
             
          </div>
     );

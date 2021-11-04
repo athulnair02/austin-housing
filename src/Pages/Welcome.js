@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import modelroom from '../Images/model-room.jpeg'
 import logo from '../Images/logo.svg'
 import '../App.css';
+import Login from './Login'
 
 export default function Welcome() {
     return (
@@ -12,10 +13,11 @@ export default function Welcome() {
                 </div>
                 <div className="Topbar-content">
                     <input type="text" className="Search-content" placeholder="search an apartment building, subleases, or anything housing related..."/>
-                    <button className="Topbar-button"><Link to="/login">login</Link></button>
-                    <button className="Topbar-button">chat</button>
-                    <button className="Topbar-button">favorites</button>
-                    <button className="Topbar-button">explore</button>
+                    <button className="Topbar-button"><Link to = "/login" className='text-link'>login</Link></button>
+                   
+                    <button className="Topbar-button"><Link to = "/chat" className='text-link'>chat</Link></button>
+                    <button className="Topbar-button"><Link to = "/favorites" className='text-link'>favorites</Link></button>
+                    <button className="Topbar-button"><Link to = "/explore" className='text-link'>explore</Link></button>
                 </div>
             </div>
         
@@ -24,7 +26,7 @@ export default function Welcome() {
                 <div className="Welcome-message">
                     <p className="Welcome-text">Looking for a place to live?</p>
                     <p className="Welcome-text">Check out what’s popular in your area on the explore page</p>
-                <button className="Explore-button">E X P L O R E</button>
+                <button className="Explore-button"><Link to = "/explore" className='text-link'> E X P L O R E</Link></button>
                 </div>
             </div>
             <div className="Location-bar">

@@ -1,6 +1,10 @@
-import { BrowserRouter as Router, Route} from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import Welcome from "./Pages/Welcome"
 import Login from "./Pages/Login"
+import Favorites from "./Pages/Favorites"
+import Chat from "./Pages/Chat"
+import Explore from "./Pages/Explore"
+import reactDom from "react-dom";
 // import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps"
 // import { Loader } from "@googlemaps/js-api-loader"
 
@@ -40,13 +44,26 @@ import Login from "./Pages/Login"
 function App() {
   return (
     <Router>
-      <Route expact path = "/">
+      <Switch>
+        <Route exact path = "/">
         <Welcome />
-      </Route>
-      <Route path = "/login">
-        <Login />
-      </Route>
+        </Route>
+        <Route exact path = "/login">
+          <Login />
+        </Route>
+        <Route exact path = "/favorites">
+          <Favorites />
+        </Route>
+        <Route exact path = "/chat">
+          <Chat />
+        </Route>
+        <Route exact path = "/explore">
+          <Explore />
+        </Route>
+      </Switch>
     </Router>
+
+    
   );
 }
 

@@ -1,9 +1,9 @@
 
-export default function Login() {
+export default function Favorites() {
     return (
         <div className="App">
             
-             <p>The Login Page</p>
+             <p>The Favorites page</p>
             
          </div>
     );

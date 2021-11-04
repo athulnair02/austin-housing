@@ -1,9 +1,9 @@
 
-export default function Login() {
+export default function Chat() {
     return (
         <div className="App">
             
-             <p>The Login Page</p>
+             <p>The Chat Page</p>
             
          </div>
     );
