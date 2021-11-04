@@ -164,3 +164,36 @@ body {
   font-size: 16px;
   z-index: 2;
 }
+
+.Content-button {
+  background: transparent;
+  /* padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px; */
+  display: block;
+  border: 1px solid #232325;
+  color: #232325;
+  margin: 19px auto;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Content-button a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.Content-input {
+  display: block;
+  width: 332px;
+  padding: 12px 20 px;
+  margin: 19px auto;
+  border: 1px solid #e0e2e7;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #6f727a;
+}
