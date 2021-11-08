@@ -4,9 +4,10 @@ import Login from "./Pages/Login"
 import Favorites from "./Pages/Favorites"
 import Chat from "./Pages/Chat"
 import Explore from "./Pages/Explore"
+import "./App.css"
 
-import { Map, GoogleApiWrapper } from 'google-maps-react';
-import reactDom from "react-dom";
+// import { Map, GoogleApiWrapper } from 'google-maps-react';
+// import reactDom from "react-dom";
 // import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps"
 // import { Loader } from "@googlemaps/js-api-loader"
 
