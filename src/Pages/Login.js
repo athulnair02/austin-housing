@@ -72,28 +72,32 @@ export default function Login() {
                         setRegisterPassword(event.target.value);
                     }}
                 />
+                <button onClick={register}> Create User</button>
+            </div>
+            <div>
+                <h3> Login </h3>
+                <input 
+                    type = "text" 
+                    className="Login-input" 
+                    placeholder="Email" 
+                    onChange={(event) => {
+                        setLoginEmail(event.target.value);
+                    }}
+                />
+                <input 
+                    type = "text" 
+                    className="Login-input" 
+                    placeholder="Password"
+                    onChange={(event) => {
+                        setLoginPassword(event.target.value);
+                    }}
+                />
+                <button onClick={login}> Login</button>
+            </div>
+            <h4> User Logged In: </h4>
+            {user?.email}
 
-        <button onClick={register}> Create User</button>
-      </div>
-
-
-            <input 
-                type = "text" 
-                className="Login-input" 
-                placeholder="Username" 
-                onChange={(event) => {
-                    setRegisterEmail(event.target.value);
-                }}
-            />
-            <input 
-                type = "text" 
-                className="Login-input" 
-                placeholder="Password"
-                
-            />
-            {/* <Button onClick={() => authenticateUser(loginEmail, loginPassword, true)} className="Content-button">  Login </Button> */}
-            
-        
+            <button onClick={logout}> Sign Out </button>
          </div>
     );
 }
