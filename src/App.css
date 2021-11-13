@@ -6,12 +6,12 @@ body {
 .App {
   width: 100vw;
   height: 200vh;
+  background-color: rgb(246, 245, 245);
 }
 
 .App-background {
   position: fixed;
   z-index: 0;
-  /* TODO: color of background */
 }
 
 .App-Logo {
@@ -30,6 +30,7 @@ body {
   flex-direction: row;
   vertical-align: middle;
   z-index: 1;
+  background: white;
 }
 
 .text-link {
@@ -70,6 +71,7 @@ body {
   margin: 10px;
   vertical-align: middle;
   z-index: 2;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Welcome {
@@ -196,4 +198,13 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #6f727a;
+}
+
+.Explore-apt-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Explore-apt-image {
+  width: 20%;
 }
