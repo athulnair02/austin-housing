@@ -16,7 +16,7 @@ body {
 
 .App-Logo {
   /* TODO get logo */
-  width: 30%;
+  width: 70%;
   height: 10%;
   margin: 10px;
   z-index: 2;
@@ -203,8 +203,34 @@ body {
 .Explore-apt-info {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  /* background-color: #8f939c; */
+  border-radius: 20px;
 }
 
 .Explore-apt-image {
-  width: 20%;
+  width: 100%;
+  height: 50%;
+}
+
+.Explore-content {
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Explore-apt-scroll {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.Horizontal-line {
+  color: #D66C70;
+  background-color: #f00;
+  height: 5px;
+  width: 100%;
 }

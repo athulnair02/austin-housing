@@ -3,24 +3,31 @@ import modelroom from '../Images/model-room.jpg'
 import logo from '../Images/logo.png'
 import '../App.css';
 
+export function Topbar() {
+    return (
+        <div className="Topbar">
+            <div className = "Logo">
+                <Link to="/">
+                    <img src={logo} className="App-Logo" alt="logo"/>
+                </Link>
+            </div>
+            <div className="Topbar-content">
+                <input type="text" className="Search-content" placeholder="search an apartment building, subleases, or anything housing related..."/>
+                <button className="Topbar-button"><Link to = "/login" className='text-link'>login</Link></button>
+            
+                <button className="Topbar-button"><Link to = "/chat" className='text-link'>chat</Link></button>
+                <button className="Topbar-button"><Link to = "/favorites" className='text-link'>favorites</Link></button>
+                <button className="Topbar-button"><Link to = "/explore" className='text-link'>explore</Link></button>
+            </div>
+        </div>
+    );
+}
+
 export default function Welcome() {
     return (
         <div className="App-background">
             <div className="App">
-                <div className="Topbar">
-                    <div className = "Logo">
-                        <img src={logo} className="App-Logo" alt="logo"/>
-                    </div>
-                    <div className="Topbar-content">
-                        <input type="text" className="Search-content" placeholder="search an apartment building, subleases, or anything housing related..."/>
-                        <button className="Topbar-button"><Link to = "/login" className='text-link'>login</Link></button>
-                    
-                        <button className="Topbar-button"><Link to = "/chat" className='text-link'>chat</Link></button>
-                        <button className="Topbar-button"><Link to = "/favorites" className='text-link'>favorites</Link></button>
-                        <button className="Topbar-button"><Link to = "/explore" className='text-link'>explore</Link></button>
-                    </div>
-                </div>
-            
+                <Topbar/>
                 <div className="Welcome">
                     <img src={modelroom} className="Welcome-background" alt="welcback"/>
                     <div className="Welcome-message">
