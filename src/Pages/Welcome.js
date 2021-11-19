@@ -2,8 +2,15 @@ import { Link } from "react-router-dom"
 import modelroom from '../Images/model-room.jpg'
 import logo from '../Images/logo.png'
 import '../App.css';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import Login from "./Login";
+// import Popup from "./Popup";
+import '../login.css';
+
 
 export default function Welcome() {
+
     return (
         <div className="App-background">
             <div className="App">
@@ -13,8 +20,9 @@ export default function Welcome() {
                     </div>
                     <div className="Topbar-content">
                         <input type="text" className="Search-content" placeholder="search an apartment building, subleases, or anything housing related..."/>
-                        <button className="Topbar-button"><Link to = "/login" className='text-link'>login</Link></button>
-                    
+                        <Popup trigger={<button className="Topbar-button"> login </button>} modal nested>
+                                {close => (<div className="modal"> {Login()}</div>)}
+                        </Popup>
                         <button className="Topbar-button"><Link to = "/chat" className='text-link'>chat</Link></button>
                         <button className="Topbar-button"><Link to = "/favorites" className='text-link'>favorites</Link></button>
                         <button className="Topbar-button"><Link to = "/explore" className='text-link'>explore</Link></button>

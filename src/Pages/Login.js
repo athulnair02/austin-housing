@@ -1,5 +1,5 @@
 //import authenticateUser from "./authenticateUser"
-
+import background from '../Images/loginbackground.png'
 import { useState } from "react";
 import {
     createUserWithEmailAndPassword,
@@ -8,6 +8,13 @@ import {
     signOut,
 } from "firebase/auth";
 import { auth } from "./firebase";
+
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import '../login.css';
+import { Link } from "react-router-dom"
+import SignUp from './SignUp';
+
 
 
 export default function Login() {
@@ -21,6 +28,8 @@ export default function Login() {
     onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser);
     });
+
+   
 
     const register = async () => {
         try {
@@ -55,52 +64,36 @@ export default function Login() {
     return (
         
         <div className="Login">
-           
-        
-            <div>
-                <h3> Register User </h3>
-                <input
-                    type="text"
-                    className="Login-input"
-                    placeholder="Email..."
-                    onChange={(event) => {
-                        setRegisterEmail(event.target.value);
-                    }}
-                />
-                <input
-                    type="text"
-                    className="Login-input"
-                    placeholder="Password..."
-                    onChange={(event) => {
-                        setRegisterPassword(event.target.value);
-                    }}
-                />
-                <button onClick={register}> Create User</button>
-            </div>
-            <div>
-                <h3> Login </h3>
+            
+            <div >
+                <h1>Login </h1>
+                <div className="Login-align"> username </div>
                 <input 
                     type = "text" 
                     className="Login-input" 
-                    placeholder="Email" 
                     onChange={(event) => {
                         setLoginEmail(event.target.value);
                     }}
                 />
+                <div className="Login-align"> password </div>
                 <input 
-                    type = "text" 
+                    type = "password" 
                     className="Login-input" 
-                    placeholder="Password"
+                    secureTextEntry={true}
                     onChange={(event) => {
                         setLoginPassword(event.target.value);
                     }}
                 />
-                <button onClick={login}> Login</button>
+                <button onClick={login} className="Login-button"> Login</button>
+                <div className="sign-up-here">
+                    
+                <Popup trigger={<button className="sign-up-here" style={{color: "#1a1919"}}> Don't have an account? Sign up here </button>} modal closeOnDocumentClick nested >
+                               {SignUp() }
+                </Popup>
+                    </div>
             </div>
-            <h4> User Logged In: </h4>
-            {user?.email}
-
-            <button onClick={logout}> Sign Out </button>
          </div>
     );
 }
+
+

@@ -188,18 +188,6 @@ body {
   text-decoration: inherit;
 }
 
-.Login-input {
-  display: block;
-  width: 332px;
-  padding: 12px 20 px;
-  margin: 19px auto;
-  border: 1px solid #e0e2e7;
-  border-radius: 8px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  color: #6f727a;
-}
-
 .Explore-apt-info {
   display: flex;
   flex-direction: column;

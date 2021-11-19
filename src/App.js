@@ -5,6 +5,7 @@ import Favorites from "./Pages/Favorites"
 import Chat from "./Pages/Chat"
 import Explore from "./Pages/Explore"
 import "./App.css"
+import SignUp from "./Pages/SignUp"
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route exact path = "/login">
           <Login />
+        </Route>
+        <Route exact path = "/sign-up">
+          <SignUp />
         </Route>
         <Route exact path = "/favorites">
           <Favorites />
