@@ -1,0 +1,64 @@
+.modal {
+  width: 100%;
+}
+
+.Login-align {
+  display: block;
+  width: 70%;
+  padding: 12px 20 px;
+  margin: 5px auto;
+  text-align: left;
+
+  font-size: 100%;
+  color: #020202;
+}
+
+.Login-input {
+  display: block;
+  width: 70%;
+  padding: 12px 20 px;
+  margin: 17px auto;
+  margin-bottom: 10%;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.Login {
+  font-size: 100%;
+  text-align: center;
+}
+
+.popup-content {
+  border-radius: 20px;
+  width: 40%;
+  height: 80%;
+}
+
+.grey-text {
+  color: #1a1919;
+  font-size: 100%;
+}
+
+.Login-button {
+  width: 60%;
+  padding: 20px;
+  background-color: #d66c7059;
+  border-radius: 15px;
+  border: none;
+  margin: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.sign-up-here {
+  background: none;
+  border: none;
+  margin: 2%;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  z-index: 2;
+  font-size: 100%;
+  color: #5f5e5e;
+}
