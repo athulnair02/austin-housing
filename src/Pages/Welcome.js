@@ -44,12 +44,12 @@ export default function Welcome() {
                         <button className="Explore-button"><Link to = "/explore" className='text-link'> E X P L O R E</Link></button>
                     </div>
                 </div>
-                <div className="Location-bar">
+                {/* <div className="Location-bar">
                     <input type="text" className="Location-search" placeholder="Location" />
                     <button className="Location-button">Price</button>
                     <button className="Location-button">Beds</button>
                     <button className="Location-button">Furnished</button>
-                </div>
+                </div> */}
             </div>
         </div>
     );

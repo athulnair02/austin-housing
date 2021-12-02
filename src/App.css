@@ -16,7 +16,7 @@ body {
 
 .App-Logo {
   /* TODO get logo */
-  width: 70%;
+  width: 50%;
   height: 10%;
   margin: 10px;
   z-index: 2;
@@ -93,7 +93,9 @@ body {
   object-fit: cover;
   resize: horizontal;
   position: absolute;
-  opacity: 70%;
+  opacity: 100%;
+  filter: blur(19px);
+  -webkit-filter: blur(10px);
   z-index: 1;
 }
 
@@ -192,9 +194,10 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 300px;
+  height: 350px;
   width: 300px;
   padding: 20px;
-  margin: 20px;
+  margin-left: 20px;
   /* background-color: #8f939c; */
   border-radius: 20px;
 }
@@ -218,7 +221,82 @@ body {
 
 .Horizontal-line {
   color: #D66C70;
-  background-color: #f00;
+  background-color: #D66C70;
   height: 5px;
   width: 100%;
+}
+
+
+.Filter-dropdown {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Filter-box {
+  background-color: #ECECEC;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border-color: #000000;
+  border-width: 5px;
+}
+
+.Filter-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.Filter-content-1 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.Filter-content-2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.Filter-content-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 14%;
+}
+
+.Filter-btn {
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.Price-slider {
+  -webkit-appearance: none;
+  height: 1px;
+  width: 90%;
+  background-color: #000000;
+  margin: 20px;
+  margin-bottom: 28px;
+}
+
+.Price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #D66C70;
+
+  cursor: ew-resize;
+}
+
+.Filter-checkbox {
+  display: inline-block;
+  margin: 5px;
+
 }
