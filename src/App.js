@@ -4,6 +4,7 @@ import Login from "./Pages/Login"
 import Favorites from "./Pages/Favorites"
 import Chat from "./Pages/Chat"
 import Explore from "./Pages/Explore"
+import Apartments from "./Pages/Apartments"
 import "./App.css"
 import SignUp from "./Pages/SignUp"
 
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route exact path = "/explore">
           <Explore />
+        </Route>
+        <Route exact path = "/apartments">
+          <Apartments />
         </Route>
       </Switch>
     </Router>
