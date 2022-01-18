@@ -1,3 +1,4 @@
+
 # Homebase
 A structured, comprehensive platform with co-created information to help University of Texas at Austin students find better off-campus housing options.
 
@@ -20,13 +21,13 @@ Each user has to input information on the apartment that they currently stay in 
 The front-end was built using React.js and works with the back-end database, Google's Firebase. 
 
 ## Team Members
-Athul Nair - Tech
-Jocelyn Calderon - Design
-Sidh Pandit - Business
-Safah Javed - Business
-Sara Tejani - Business
-Tej Reddy - Business
-Sheryl Dsouza - Tech
+Athul Nair - Tech  
+Jocelyn Calderon - Design  
+Sidh Pandit - Business  
+Safah Javed - Business  
+Sara Tejani - Business  
+Tej Reddy - Business  
+Sheryl Dsouza - Tech  
 
 ### Notes
 This project was made under the UT Austin Convergent Organization.
